@@ -1,3 +1,29 @@
+/* CSS rules to specify families
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Maitree', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500&family=Oxygen:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
 body {
     background-color: plum;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+h2, h3, h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+footer {
+    font-family: 'Maitree', serif;
+    font-size: 15px;
+    font-weight: 300;
 }
