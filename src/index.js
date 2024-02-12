@@ -1,6 +1,6 @@
-function displayTale(response) {
-  console.log("Fairy tale generated");
-  new Typewriter("#tale", {
+function displayPoem(response) {
+  console.log("Poem generated");
+  new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
     delay: 15,
@@ -8,25 +8,25 @@ function displayTale(response) {
   });
 }
 
-function generateTale(event) {
+function generatePoem(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "49ecec9d222e3fb8o4502323fetf4ac1";
   let context =
-    "You are a parent and have 2 children aged 3 and 5. Generate a sweet fairy tale, with positive message at the end, in English language, to be read before bedtime. Maximum length: 15 lines.";
-  let prompt = `User instructions: Generate a sweet fairy tale for children, in English language, about ${instructionsInput.value}. Add also maximum 2 emojis per line, Break down into paragraphs.`;
+    "You are a romantic poem expert, and love to write short poems. Your mission is to generate a 7 lines poem, in basic HTML. Separate every verse with <br />. Be sure to follow the user instructions.";
+  let prompt = `User instructions: Generate a romantic French poem about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let taleElement = document.querySelector("#tale");
-  taleElement.classList.remove("hidden");
-  taleElement.innerHTML = `🪄 Generating a fairy tale for children about ${instructionsInput.value} ...`;
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `Generating a French poem about ${instructionsInput.value}`;
 
-  console.log("Generating tale");
+  console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
   console.log("Context: ${context}");
-  axios.get(apiURL).then(displayTale);
+  axios.get(apiURL).then(displayPoem);
 }
 
-let taleFormElement = document.querySelector("#tale-generator");
-taleFormElement.addEventListener("submit", generateTale);
+let poemFormElement = document.querySelector("#poem-generator");
+poemFormElement.addEventListener("submit", generatePoem);
