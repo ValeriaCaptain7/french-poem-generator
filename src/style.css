@@ -9,8 +9,8 @@ font-family: 'Maitree', serif; */
 :root {
     --hot-pink: #EF7C8E;
     --cream: #FAE8E0;
-    --peach: #fad071;
-    --violet: #b34bbe;
+    --blue: #225bad;
+    --light-blue: #a8b0f4;
     --rosewater: #D8A7B1;
 }
 
@@ -18,52 +18,53 @@ font-family: 'Maitree', serif; */
 body {
     font-family: 'Maitree', serif;
     text-align: center;
-    background: linear-gradient(270deg, var(--peach), var(--violet));
+    background: linear-gradient(89deg, #225bad, #a8b0f4);
     background-size: 400% 400%;
-    -webkit-animation: AnimationFrenchPoem 15s ease infinite;
-    -moz-animation: AnimationFrenchPoem 15s ease infinite;
-    animation: AnimationFrenchPoem 15s ease infinite;
+    -webkit-animation: AnimationFrenchPoem 17s ease infinite;
+    -moz-animation: AnimationFrenchPoem 17s ease infinite;
+    animation: AnimationFrenchPoem 17s ease infinite;
 }
+
 
 @-webkit-keyframes AnimationFrenchPoem {
     0% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 
     50% {
-        background-position: 100% 50%
+        background-position: 97% 100%
     }
 
     100% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 }
 
 @-moz-keyframes AnimationFrenchPoem {
     0% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 
     50% {
-        background-position: 100% 50%
+        background-position: 97% 100%
     }
 
     100% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 }
 
 @keyframes AnimationFrenchPoem {
     0% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 
     50% {
-        background-position: 100% 50%
+        background-position: 97% 100%
     }
 
     100% {
-        background-position: 0% 50%
+        background-position: 4% 0%
     }
 }
 
@@ -109,6 +110,7 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    color: rgb(35, 33, 33);
 }
 
 .p-4 {
