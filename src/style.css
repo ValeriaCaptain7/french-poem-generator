@@ -2,11 +2,27 @@
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Oxygen', sans-serif;
 font-family: 'Maitree', serif; */
-
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500&family=Oxygen:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
 
+
+/* Color palette */
+:root {
+    --hot-pink: #EF7C8E;
+    --cream: #FAE8E0;
+    --spearmint: #B6E2D3;
+    --rosewater: #D8A7B1;
+}
+
+
 body {
-    background-color: plum;
+    font-family: 'Maitree', serif;
+    text-align: center;
+    background: rgb(104, 213, 177);
+    background: linear-gradient(133deg, rgba(182, 226, 211, 1) 0%, rgb(77, 233, 178) 41%, rgba(250, 232, 224, 0.9332107843137255) 94%);
+}
+
+header {
+
     text-align: center;
 }
 
@@ -14,16 +30,48 @@ h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     font-size: 35px;
+    color: aliceblue;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 500;
     font-size: 30px;
 }
 
+.d-flex {
+    background-color: var(--cream);
+    width: 400px;
+    margin: 0 auto;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button,
+.submit {
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: var(--rosewater);
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover,
+.submit:hover {
+    background-color: var(--hot-pink);
+    transition: 0.2s;
+}
+
+
+
 footer {
-    font-family: 'Maitree', serif;
+    text-align: center;
     font-size: 15px;
     font-weight: 300;
 }
