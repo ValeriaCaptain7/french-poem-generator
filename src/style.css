@@ -68,8 +68,8 @@ body {
 }
 
 .page-container {
-    margin: 120px auto;
-    max-width: 1000px;
+    margin: 40px auto;
+    max-width: 1240px;
     line-height: 1.5;
 }
 
@@ -109,6 +109,10 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+}
+
+.p-4 {
+    width: 80%;
 }
 
 #generator-container {
