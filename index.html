@@ -12,53 +12,63 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to the AI French poem generator</h1>
-        <h2>Generate a French poem in a few seconds</h2>
-        <p>AI French Poem Generator. Crafted using the latest in artificial intelligence technology, this innovative
-            tool is
-            designed to inspire creativity and passion in poets and enthusiasts alike. Whether you're a seasoned poet or
-            a curious
-            beginner, our generator offers a seamless experience, delivering beautiful, authentic French verses in
-            moments. Immerse
-            yourself in the elegance of French poetry, effortlessly created to reflect your emotions and ideas. Explore
-            the
-            limitless possibilities of poetic expression today with our user-friendly, AI-powered French Poem Generator.
-        </p>
-    </header>
-
-    <main>
-        <div class="d-flex flex-column mb-3 align-items-center">
-            <div id="form-container" class="p-2">
-                <form id="poem-generator" class="p-2">
-                    <input type="text" placeholder="Enter the topic of the French poem" autofocus required
-                        autocomplete="off" />
-                    <input class="submit" type="submit" value="Generate French Poem" />
-                </form>
-                <div class="hint">examples: fleurs, amour, Paris.</div>
+    <div class="page-container">
+        <header>
+            <div>
+                <h1>Welcome to the AI French poem generator</h1>
+                <h2>Generate a French poem in a few seconds</h2>
+                <p>AI French Poem Generator. Crafted using the latest in artificial intelligence technology, this
+                    innovative
+                    tool is
+                    designed to inspire creativity and passion in poets and enthusiasts alike. Whether you're a seasoned
+                    poet or
+                    a curious
+                    beginner, our generator offers a seamless experience, delivering beautiful, authentic French verses
+                    in
+                    moments. Immerse
+                    yourself in the elegance of French poetry, effortlessly created to reflect your emotions and ideas.
+                    Explore
+                    the
+                    limitless possibilities of poetic expression today with our user-friendly, AI-powered French Poem
+                    Generator.
+                </p>
             </div>
-            <div id="poem" class="p-2">
-                <span class="Typewriter__wrapper">
-                    The poem will go here<br>
-                    The poem will go here<br>
-                    The poem will go here<br>
-                    The poem will go here<br>
-                    <strong>AI Poem Generator</strong>
-                </span>
-                The poem will go here
-                <br />
-                The poem will go here
-                <br />
-                <span class="Typewriter__cursor">|</span>
-            </div>
-        </div>
-    </main>
+        </header>
 
-    <footer>This AI project was coded by <a href="https://github.com/ValeriaCaptain7/" target="_blank">Valeria
-            Panzetta</a> is <a href="https://github.com/ValeriaCaptain7/french-poem-generator"
-            target="_blank">open-sourced on GitHub</a>,
-        and it is <a href="https://ai-new-french-poem-generator.netlify.app/" target="_blank">hosted on Netlify</a>.
-    </footer>
+        <main>
+            <div id="generator-container" class="d-flex flex-column mb-3 align-items-center">
+                <div id="form-container" class="p-2">
+                    <form id="poem-generator" class="p-2">
+                        <input type="text" placeholder="Enter the topic of the poem" autofocus required
+                            autocomplete="off" class="instructions" />
+                        <input class="submit-button" type="submit" value="Generate" />
+                    </form>
+                    <div class="hint">examples: flowers, love, Paris.</div>
+                </div>
+                <div id="poem">
+                    <span class="Typewriter__wrapper">
+                        The poem will go here<br>
+                        The poem will go here<br>
+                        The poem will go here<br>
+                        The poem will go here<br>
+                        <strong>AI Poem Generator</strong>
+                    </span>
+                    The poem will go here
+                    <br />
+                    The poem will go here
+                    <br />
+                    <span class="Typewriter__cursor">|</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>This AI project was coded by <a href="https://github.com/ValeriaCaptain7/" target="_blank">Valeria
+                Panzetta</a> is <a href="https://github.com/ValeriaCaptain7/french-poem-generator"
+                target="_blank">open-sourced on GitHub</a>,
+            and it is <a href="https://ai-new-french-poem-generator.netlify.app/" target="_blank">hosted on Netlify</a>.
+        </footer>
+    </div>
+
     <script src="src/index.js"></script>
 </body>
 

@@ -18,33 +18,57 @@ body {
     font-family: 'Maitree', serif;
     text-align: center;
     background: rgb(104, 213, 177);
-    background: linear-gradient(133deg, rgba(182, 226, 211, 1) 0%, rgb(77, 233, 178) 41%, rgba(250, 232, 224, 0.9332107843137255) 94%);
+    background: linear-gradient(70deg, rgba(182, 226, 211, 1) 0%, rgb(51, 197, 146) 41%, rgba(250, 232, 224, 0.9332107843137255) 94%);
+}
+
+.page-container {
+    margin: 120px auto;
+    max-width: 1200px;
 }
 
 header {
-
+    margin-bottom: 30px;
+    color: rgb(67, 62, 62);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    font-size: 35px;
-    color: aliceblue;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
 }
 
-h2,
-h3,
-h4 {
+a {
+    color: var(--hot-pink);
+}
+
+a:visited {
+    color: white;
+}
+
+h2 {
     font-family: 'Oxygen', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
-.d-flex {
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#generator-container {
     background-color: var(--cream);
     width: 400px;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 #form-container {
@@ -52,26 +76,58 @@ h4 {
     flex-direction: column;
 }
 
-button,
-.submit {
-    padding: 15px;
-    font-size: 14px;
-    color: white;
-    background-color: var(--rosewater);
-    border: none;
-    border-radius: 25px;
+form {
+    padding: 30px;
+    background-color: var(--cream);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 18px 5px rgba(88, 86, 86, 0.46);
 }
 
-button:hover,
-.submit:hover {
+.instructions {
+    padding: 16px;
+    border: 1px solid gray;
+    width: 80%;
+    font-size: 13px;
+    border-radius: 50px;
+    line-height: 20px;
+    color: black;
+}
+
+.submit-button {
+    margin-left: 10px;
+    padding: 15px 24px;
+    width: 150px;
+    font-size: 14px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--rosewater);
+    border: none;
+    border-radius: 50px;
+}
+
+.submit-button:hover {
     background-color: var(--hot-pink);
+    box-shadow: 3px 3px 15px 5px rgba(150, 146, 146, 0.46);
     transition: 0.2s;
 }
 
+#poem {
+    font-size: 16px;
+    background-color: var(--cream);
+    padding: 20px;
+    line-height: 2;
+    border-left: 3px solid var(--hot-pink);
+    box-shadow: 3px 3px 18px 5px rgba(88, 86, 86, 0.46);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
 
 footer {
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
+    margin-top: 30px;
     font-weight: 300;
 }
