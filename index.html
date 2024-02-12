@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +9,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -41,13 +41,12 @@
                 <div id="form-container" class="p-2">
                     <form id="poem-generator" class="p-2">
                         <input type="text" placeholder="Enter the topic of the poem" autofocus required
-                            autocomplete="off" class="instructions" />
+                            autocomplete="off" class="instructions" id="user-instructions"/>
                         <input class="submit-button" type="submit" value="Generate" />
                     </form>
                     <div class="hint">examples: flowers, love, Paris.</div>
                 </div>
                 <div id="poem">
-
                 </div>
             </div>
         </main>
