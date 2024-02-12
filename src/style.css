@@ -74,7 +74,7 @@ body {
 
 header {
     margin-bottom: 30px;
-    color: rgb(67, 62, 62);
+    color: rgb(58, 55, 55);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -120,6 +120,7 @@ p {
 #form-container {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 form {
@@ -139,6 +140,11 @@ form {
     border-radius: 50px;
     line-height: 20px;
     color: black;
+}
+
+.hint {
+    font-size: 12px;
+    margin-left: 15px;
 }
 
 .submit-button {
